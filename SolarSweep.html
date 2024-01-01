@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="imgass\favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="imagechangers.css">
+  <base href="G:\Creative\bombardpub website\main\">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Sweep</title>
+  </head>
+
+<style>
+  .reader1 {
+  height:85vh;
+  width:100%;
+  position: absolute;
+  top:2vh;
+  left:50%;
+  transform: translate(-50%);
+  }
+
+  .reader2 {
+  height:7vh;
+  width:90vh;
+  position: fixed;
+  left:50%;
+  transform: translate(-50%);
+  top:88vh;
+  display: flex;
+  justify-content: center;
+  font-family: 'Aldrich Regular';
+  font-size: 2.6vh;
+  text-align: center;
+  }
+
+  .return {
+  height:7vh;
+  width:7vh;
+  cursor:pointer;
+  }
+
+  .navigation {
+  height:7vh;
+  width:75vh;
+  display: block;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  }
+
+  .help {
+  height:7vh;
+  width:7vh;
+  }
+
+  .progbar{
+  border:2.5px solid #1aff87;
+  width:100%;
+  height:2vh;
+  z-index: 1;
+  margin-bottom: 1vh;
+  box-sizing: border-box;
+  }
+
+  .navigbutts{
+  width:100%;
+  height:3.8vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  }
+
+  .navbutton{
+  height:3vh;
+  width:6vh;
+  cursor: pointer
+  }
+
+  .capname{
+  height:3vh;
+  width:21vh;
+  text-align: center;
+  font-size:2.3vh;
+  }
+
+  .pagenum {
+  height:3vh;
+  width:9vh;
+  }
+
+  .selectcap {
+  height:3vh;
+  width:20vh;
+  text-align: right;
+  border:1px solid white;
+  box-sizing: border-box;
+  font-size:2vh;
+  text-align: center;
+  padding-top: 0.22vh;
+  margin-left: 1vh;
+  cursor:default;
+  }
+
+  .selectcap:hover {
+  border:2px solid #1aff87;
+  color:#1aff87;
+  box-sizing: border-box;
+  }
+
+  .dropdownchapters {
+  display: none;
+  position: absolute;
+  bottom:50%;
+  background-color: black;
+  width: 19vh;
+  z-index: 3;
+  border:2px #1aff87 solid;
+  }
+  .dropdownchapters a {
+    font-family: 'Aldrich Regular';
+    font-size: 2vh;
+    color: #1aff87;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    height:2.5vh;
+  }
+
+  .dropdownhelp{
+  display: none;
+  position: absolute;
+  font-size: 2.2vh;
+  bottom:8vh;
+  background-color: black;
+  width: 25vh;
+  z-index: 3;
+  border:2px #7DFF39 solid;
+  font-size: 1.5vh;
+  padding: 1vh;
+  }
+
+  .selectcap:hover .dropdownchapters {display:block;}
+  .help:hover .dropdownhelp {display:block;}
+  .dropdownchapters a:hover {background-color: #555555; color:white;}
+
+  .bar {
+  left:0px;
+  height:100%;
+  width:0%;
+  background: linear-gradient(0deg, #000000 0%, #1aff87 90%);
+  transition: width 0.13s;
+  }
+</style>
+
+  <body style="background: black; text-align: center; justify-content:center;">
+
+    <div class="reader1">
+      <img id="comicImage" src="" alt="Page" style="height:85vh;">
+    </div>
+
+    <div class="reader2">
+
+      <div class="return" title="Back to Bombard Publishing"><a href="home.html"><div style="width:100%; height:100%"></div></a></div>
+
+      <div class="navigation">
+        <div class="progbar"><div class="bar" id='pbar'></div></div>
+        <div class="navigbutts">
+          <div class="nbspacing capname"> <span id="chaptername">------</span></div>
+          <div class="nbspacing navbutton buttonprevcap" onclick="previousChapter()"></div>
+          <div class="nbspacing navbutton buttonprevpag" onclick="previousPage()"></div>
+          <div class="nbspacing pagenum"> <span id="pageCounter">---/---</span></div>
+          <div class="nbspacing navbutton buttonnextpag" onclick="nextPage()"></div>
+          <div class="nbspacing navbutton buttonnextcap" onclick="nextChapter()"></div>
+
+          <div class="nbspacing selectcap">SELECT CHAPTER <!-- UPDATE CHAPTER TITLES HERE (1/2) -->
+            <div class="dropdownchapters">
+              <a onclick="loadchapter(1)">TestChapter 1</a>
+              <a onclick="loadchapter(2)">TestChapter 2</a>
+              <a onclick="loadchapter(3)">TestChapter 3</a>
+              <a onclick="loadchapter(4)">TestChapter 4</a>
+              <a onclick="loadchapter(5)">TestChapter 5</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="help">
+        <div class="dropdownhelp">
+          Change pages by clicking the single-chevron navigation buttons, or by pressing the left and right arrow keys.
+          <br><br>
+          Change chapters by clicking the 3-chevron nav buttons, or through the 'Select Chapter' menu.
+          <br><br>
+          Go back to the Bombard Publishing home page by using the left-most 'return' button.
+          <br><br>
+          Enjoy!
+          </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p style="font-size: 1.5vh; color:#669988;">
+        <i>© 2023 Bombard Publishing. All rights reserved.</i>
+      </p>
+      </div>
+
+  <script>
+  // COMIC DETAILS, UPDATE WITH PAGE NUMBERS AND TITLES (2/2)
+  const comicData = {
+    chapters: [
+      { pages: 7, name: "Test Chapter 1" }, // U could add a ' , format: "webm" ' collumn for variable file types
+      { pages: 5, name: "Test Chapter 2" },
+      { pages: 17, name: "Test Chapter 3" },
+      { pages: 32, name: "Test Chapter 4" },
+      { pages: 21, name: "Test Chapter 5" }
+    ]
+  };
+  //initial state
+  let currentChapter = 1;
+  let currentPage = 1;
+  const totalChapters = comicData.chapters.length;
+  //update page function
+  function updatePage() {
+    const comicImage = document.getElementById("comicImage");
+    const pageCounter = document.getElementById("pageCounter");
+    const chaptername = document.getElementById("chaptername");
+    const pbar = document.getElementById("pbar");
+    const chapterData = comicData.chapters[currentChapter - 1];
+
+    comicImage.src = `SolarSweepComic/${currentChapter}/${currentPage}.webp`;
+    pageCounter.textContent = `${currentPage}/${chapterData.pages}`;
+    chaptername.textContent = `${chapterData.name}`
+    pbar.style.width = (currentPage - 1)/(chapterData.pages - 1)*100 + '%';
+  }
+
+  // navigation
+  document.addEventListener('keydown', function(event) {
+    switch(event.key) {
+      case 'ArrowRight':
+        nextPage();
+        break;
+      case 'ArrowLeft':
+        previousPage();
+        break;
+    }
+  });
+
+  function previousChapter() {
+    if (currentChapter > 1) {
+      currentChapter--;
+      currentPage = 1;
+      updatePage();
+    } else {
+      currentChapter = 1;
+      currentPage = 1;
+      updatePage();
+    }
+  }
+
+  function nextChapter() {
+    if (currentChapter < totalChapters) {
+      currentChapter++;
+      currentPage = 1;
+      updatePage();
+    } else {
+    currentChapter = totalChapters;
+    currentPage = comicData.chapters[currentChapter - 1].pages;
+    updatePage();
+    }
+  }
+
+  function previousPage() {
+    if (currentPage > 1) {
+      currentPage--;
+      updatePage();
+    } else if (currentChapter > 1) {
+      currentChapter--;
+      currentPage = comicData.chapters[currentChapter - 1].pages;
+      updatePage();
+    }
+  }
+
+  function nextPage() {
+    const chapterData = comicData.chapters[currentChapter - 1];
+    if (currentPage < chapterData.pages) {
+      currentPage++;
+      updatePage();
+    } else if (currentChapter < totalChapters) {
+      currentChapter++;
+      currentPage = 1;
+      updatePage();
+    }
+  }
+
+  function loadchapter(chapterNum) {
+    currentChapter = chapterNum;
+    currentPage = 1;
+    updatePage();
+    }
+
+  // Initial page load
+  updatePage();
+
+</script>
+</body>
+</html>

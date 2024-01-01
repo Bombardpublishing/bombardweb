@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="imgass\favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="imagechangers.css">
+  <base href="G:\Creative\bombardpub website\main\">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bombard Publishing</title>
+</head>
+
+<body style="background: black;">
+<div class="container">
+
+  <div class="left-container">
+    <a href="home.html">
+    <div class="logodiv">
+    </div></a>
+    <div class="L1">
+      <div class="L2">
+        <div class="calc-W-screen screencode" id="screen"></div>
+        <div class="calc-row1">
+          <div class="buttonA bigbutt" id="buttonA" onclick="loadPage('frontpage.html')"></div>
+          <div class="buttonB bigbutt" id="buttonB" onclick="loadPage('aboutbombard.html')"></div>
+          <div class="buttonC bigbutt" id="buttonC" onclick="loadPage('contact.html')"></div>
+          <div class="buttonD bigbutt" id="buttonD" onclick="loadPage('info.html')"></div>
+          </div>
+        <div class="calc-row2">
+          <div class="buttonE bigbutt" id="buttonE" onclick="loadPage('solswp.html')"></div>
+          <div class="buttonF bigbutt" id="buttonF">
+            <a href="https://www.twitter.com/viermeelectric" target="_blank">
+              <div  style="height:100%; width:100%;"> </div> </a> </div>
+          <div class="buttonG bigbutt" id="buttonG"></div> <!-- bomb button, see script -->
+          <div class="buttonH bigbutt" id="buttonH" onclick="loadPage('merch.html')"></div>
+        </div>
+        <div class="calc-row3">
+          <div class="button7 smallbutt" id="button7" onclick="appendNumber(7)"></div>
+          <div class="button8 smallbutt" id="button8" onclick="appendNumber(8)"></div>
+          <div class="button9 smallbutt" id="button9" onclick="appendNumber(9)"></div>
+          <div class="buttonI longbutt" id="buttonI" onclick="send()"></div>
+        </div>
+        <div class="calc-row4">
+          <div class="button4 smallbutt" id="button4" onclick="appendNumber(4)"></div>
+          <div class="button5 smallbutt" id="button5" onclick="appendNumber(5)"></div>
+          <div class="button6 smallbutt" id="button6" onclick="appendNumber(6)"></div>
+          <div class="buttonJ longbutt" id="buttonJ" onclick="backspace()"></div>
+        </div>
+        <div class="calc-row5">
+          <div class="button1 smallbutt" id="button1" onclick="appendNumber(1)"></div>
+          <div class="button2 smallbutt" id="button2" onclick="appendNumber(2)"></div>
+          <div class="button3 smallbutt" id="button3" onclick="appendNumber(3)"></div>
+          <div class="button0 smallbutt" id="button0" onclick="appendNumber(0)"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="right-container">
+      <div class="R1">
+        <div class="varcontentbrd">
+        <iframe id="varcontent" src="frontpage.html" class="iframe"></iframe>
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+  <p style="font-size: 1.5vh; color:#669988;">
+    <i>© 2023 Bombard Publishing. All rights reserved.</i>
+  </p>
+</div>
+</body>
+
+<!-- SCRIPTS -->
+
+ <!-- BOMB BUTTON SCRIPT-->
+ <style>
+  #cursorText {
+      position: fixed;
+      display: none;
+      white-space: nowrap;
+      font-size: 30px;
+      color: #ff0000;
+      text-align: center;
+      font-family: Impact;
+      user-select: none;
+      pointer-events: none;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: black;
+      left:-50px;
+    }
+  </style>
+
+ <script>
+  document.addEventListener('DOMContentLoaded', function () {
+      var cursorText = document.createElement('div');
+      cursorText.id = 'cursorText';
+      document.body.appendChild(cursorText);
+
+      var buttonG = document.getElementById('buttonG');
+      var canTrigger = true;
+
+      buttonG.addEventListener('click', function (e) {
+        if (canTrigger) {
+        cursorText.textContent = 'BOMB SENT';
+        cursorText.style.left = (e.pageX - cursorText.clientWidth / 2) + 'px';
+        cursorText.style.top = (e.pageY - cursorText.clientHeight - 10) + 'px';
+        cursorText.style.display = 'block';
+        animateCursorText(cursorText);
+        canTrigger = false;
+        setTimeout(function () {
+        canTrigger = true;
+      }, 2000);
+    }
+      });
+    });
+
+    function animateCursorText(element) {
+      var opacity = 1;
+      var position = parseInt(element.style.top, 10);
+      var interval = setInterval(function () {
+        position -= 2;
+        element.style.top = position + 'px';
+
+        opacity -= 0.01;
+        element.style.opacity = opacity;
+
+        if (opacity <= 0) {
+          element.style.display = 'none';
+          clearInterval(interval);
+        }
+      }, 20);
+    }
+  </script>
+
+ <!-- CODE INPUT SCRIPT -->
+ <style>
+ .incorrectcode {
+   color: #ff5039;
+ }
+ .correctcode {
+   color: #7dff39;
+ }
+ </style>
+ <script>
+    let screen = document.getElementById('screen');
+    let code = '';
+
+    function appendNumber(num){
+      if (code.length < 8){
+        code += num;
+        screen.classList.remove('correctcode');
+        screen.classList.remove('incorrectcode');
+        updateScreen();
+      }
+    }
+
+    function backspace(){
+      code = code.slice(0, -1);
+      screen.classList.remove('correctcode');
+
+      updateScreen();
+    }
+
+    function send(){
+      if (code === '98556'){
+        loadPage('meal.html');
+        screen.classList.add('correctcode');
+      } else {
+        displayIncorrectCode();
+        updateScreen();
+      }
+    }
+
+  function displayIncorrectCode() {
+   screen.classList.add('incorrectcode');
+   setTimeout(() => {
+     screen.classList.remove('incorrectcode');
+   }, 500);
+  }
+
+  function updateScreen(){
+   screen.textContent = code;
+ }
+
+</script>
+
+<!-- LOAD PAGE SCRIPT -->
+ <script>
+      function loadPage(pageUrl) {
+        document.getElementById('varcontent').src = pageUrl;
+        }
+    </script>
+
+</html>
