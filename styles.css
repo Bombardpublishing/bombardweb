@@ -33,10 +33,6 @@ em {
   color: #1aff87;
 }
 
-.orangeheader{
-  color:orange;
-}
-
 .container {
   height:89vh;
   width:120vh;
@@ -84,7 +80,7 @@ em {
   z-index: 1;
 }
 
-.logodiv {
+.logodivsize {
   width:125%;
   height:23.5%;
   padding-bottom: 6%;
@@ -234,8 +230,6 @@ em {
 }
 
 .makethatshitspinson{
-  left: 40%;
-  position:absolute;
   -webkit-animation:spin 18s linear infinite;
   -moz-animation:spin 18s linear infinite;
   animation:spin 18s linear infinite;
