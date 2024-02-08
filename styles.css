@@ -28,7 +28,7 @@ p {
   color:#ffffff;
   text-align: left;
   text-indent: 6%;
-  font-size: 85%;
+  font-size: 100%;
 }
 
 em {
@@ -106,7 +106,7 @@ em {
   width:100%;
   border: 2px solid #1aff87;
   box-sizing: border-box;
-  font-size:360%;
+  font-size:6vh;
   font-family: 'Aldrich Regular';
   align-items: center;
   text-align: center;
