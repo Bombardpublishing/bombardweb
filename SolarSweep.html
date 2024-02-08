@@ -11,119 +11,141 @@
 
 <style>
   .reader1 {
-  height:85vh;
-  width:100%;
-  position: fixed;
-  top:2vh;
-  left:50%;
-  transform: translate(-50%);
+    width:100%;
+    height:85%;
+    position: absolute;
+    top:2vh;
+    left:50%;
+    transform: translate(-50%);
+    box-sizing: border-box;
+  }
+  .reader1 img{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+  }
+  .tapnext{
+    width:45.5%;
+    height:100%;
+    position:absolute;
+    right:0%;
+    top:0%;
+  }
+  .tapprev{
+    width:45.5%;
+    height:100%;
+    position:absolute;
+    left:0%;
+    top:0%;
   }
 
   .reader2 {
-  width:100%;
-  max-width:90vh;
-  aspect-ratio: 1/0.08;
-  box-sizing: border-box;
-  position: fixed;
-  left:50%;
-  transform: translate(-50%);
-  top:88vh;
-  display: flex;
-  justify-content: center;
-  font-family: 'Aldrich Regular';
-  font-size: 2.6vmin;
-  text-align: center;
+    width:100%;
+    max-width:90vh;
+    aspect-ratio: 1/0.08;
+    box-sizing: border-box;
+    position: fixed;
+    left:50%;
+    transform: translate(-50%);
+    top:88vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Aldrich Regular';
+    font-size: 2.6vmin;
+    text-align: center;
   }
 
   .return {
-  height:100%;
-  width:7%;
-  cursor:pointer;
+    height:100%;
+    width:7%;
+    cursor:pointer;
   }
 
   .navigation {
-  height:100%;
-  width:86%;
-  display: block;
-  margin-left: 0.7%;
-  margin-right: 0.7%;
+    height:100%;
+    width:86%;
+    display: block;
+    margin-left: 0.7%;
+    margin-right: 0.7%;
   }
 
   .help {
-  height:100%;
-  width:7%;
-  z-index: 1;
+    height:100%;
+    width:7%;
+    z-index: 1;
   }
 
   .progbar{
-  border:2px solid #1aff87;
-  width:100%;
-  height:30%;
-  z-index: 1;
-  margin-bottom: 1%;
-  box-sizing: border-box;
+    border:2px solid #1aff87;
+    width:100%;
+    height:30%;
+    z-index: 1;
+    margin-bottom: 1%;
+    box-sizing: border-box;
   }
 
   .navigbutts{
-  width:100%;
-  height:50%;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+    width:100%;
+    height:50%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
 
   .navbutton{
-  height:100%;
-  min-width:8%;
-  cursor: pointer
+    height:100%;
+    min-width:8%;
+    cursor: pointer
   }
 
   .capname{
-  height:100%;
-  width:27%;
-  text-align: center;
-  font-size:90%;
-  padding-top: 0.5%;
+    height:100%;
+    width:27%;
+    text-align: center;
+    font-size:90%;
+    padding-top: 0.5%;
   }
 
   .pagenum {
-  height:100%;
-  min-width:12%;
-  padding-top: 0.5%;
+    height:100%;
+    min-width:12%;
+    padding-top: 0.5%;
   }
 
   .selectcap {
-  height:100%;
-  width:27%;
-  text-align: right;
-  border:1.5px solid white;
-  box-sizing: border-box;
-  font-size:80%;
-  text-align: center;
-  margin-left: 2%;
-  cursor:default;
-  z-index: 2;
-  background-color: black;
-  padding-top: 0.5%;
+    height:100%;
+    width:27%;
+    text-align: right;
+    /* border:1.5px solid white; */
+    box-sizing: border-box;
+    font-size:80%;
+    text-align: center;
+    margin-left: 2%;
+    cursor:default;
+    z-index: 2;
+    /* background-color: black; */
+    padding-top: 0.6%;
   }
 
   .selectcap:hover {
-  border:2px solid #1aff87;
-  color:#1aff87;
-  box-sizing: border-box;
+    /* border:2px solid #1aff87;*/
+    color:#1aff87;
+    /* box-sizing: border-box;*/
   }
 
   .dropdownchapters {
-  display: none;
-  position: absolute;
-  bottom:56%;
-  width: 23%;
-  z-index: 3;
-  border:2px #1aff87 solid;
-  background-color: black;
-  box-sizing: border-box;
+    display: none;
+    position: absolute;
+    bottom:56%;
+    width: 23%;
+    z-index: 3;
+    border:2px #1aff87 solid;
+    background-color: black;
+    box-sizing: border-box;
   }
 
   .dropdownchapters a {
@@ -138,16 +160,16 @@
   }
 
   .dropdownhelp{
-  display: none;
-  position: absolute;
-  font-size: 1.5vmin;
-  bottom:8vh;
-  background-color: black;
-  width: 25vh;
-  z-index: 3;
-  border:2px #7DFF39 solid;
-  padding: 1vh;
-  right:0px;
+    display: none;
+    position: absolute;
+    font-size: 1.5vmin;
+    bottom:8vh;
+    background-color: black;
+    width: 25vh;
+    z-index: 3;
+    border:2px #7DFF39 solid;
+    padding: 1vh;
+    right:0px;
   }
 
   .selectcap:hover .dropdownchapters {display:block;}
@@ -164,43 +186,46 @@
 
 </style>
 
-  <body style="background: black; text-align: center; justify-content:center;">
+  <body style="background: black; text-align: center; justify-content:center; background: linear-gradient(0deg, #1aff87 -50%, #000000 20%);">
 
     <div class="reader1">
-      <img id="comicImage" src="" alt="Test Chapters 3-5 have no pics in them yet cheers" style="height:100%; max-height:85vh;">
+      <img id="comicImage" src="" alt="">
+      <div class="tapnext" onclick="nextPage()"></div>
+      <div class="tapprev" onclick="previousPage()"></div>
     </div>
 
     <div class="reader2">
 
-      <div class="return" title="Back to Bombard Publishing"><a href="/"><div style="width:100%; height:100%"></div></a></div>
+      <div class="return return1 backbutt" title="Back to Bombard Publishing"><a href="/"><div class="frontbutt return2"></div></a></div>
 
       <div class="navigation">
         <div class="progbar"><div class="bar" id='pbar'></div></div>
         <div class="navigbutts">
           <div class="nbspacing capname"> <span id="chaptername">------</span></div>
-          <div class="nbspacing navbutton buttonprevcap" onclick="previousChapter()"></div>
-          <div class="nbspacing navbutton buttonprevpag" onclick="previousPage()"></div>
+          <div class="nbspacing navbutton prevc1 backbutt"><div class="frontbutt prevc2" onclick="previousChapter()"></div></div>
+          <div class="nbspacing navbutton prevp1 backbutt"><div class="frontbutt prevp2" onclick="previousPage()"></div></div>
           <div class="nbspacing pagenum"> <span id="pageCounter">---/---</span></div>
-          <div class="nbspacing navbutton buttonnextpag" onclick="nextPage()"></div>
-          <div class="nbspacing navbutton buttonnextcap" onclick="nextChapter()"></div>
+          <div class="nbspacing navbutton nextp1 backbutt"><div class="frontbutt nextp2" onclick="nextPage()"></div></div>
+          <div class="nbspacing navbutton nextc1 backbutt"><div class="frontbutt nextc2" onclick="nextChapter()"></div></div>
 
           <div class="nbspacing selectcap">SELECT CHAPTER <!-- UPDATE CHAPTER TITLES HERE (1/2) -->
             <div class="dropdownchapters">
-              <a onclick="loadchapter(1)">Chapter 1</a>
-              <a onclick="loadchapter(2)">Chapter 2</a>
-              <a onclick="loadchapter(3)">Chapter 3</a>
-              <a onclick="loadchapter(4)">Chapter 4</a>
-              <a onclick="loadchapter(5)">Chapter 5</a>
+              <a onclick="loadchapter(1)">Prologue</a>
+              <a onclick="loadchapter(2)">Chapter 1</a>
+              <a onclick="loadchapter(3)">Chapter 2</a>
+              <a onclick="loadchapter(4)">Chapter 3</a>
+              <a onclick="loadchapter(5)">Chapter 4</a>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="help">
+      <div class="help backbutt help1">
+        <div class="help2 frontbutt"></div>
         <div class="dropdownhelp">
-          Change pages by clicking the single-chevron navigation buttons, or by pressing the left and right arrow keys.
+          Change pages by clicking the < > navigation buttons, by pressing the left/right arrow keys, or by clicking or tapping on the left/right part of the page.
           <br><br>
-          Change chapters by clicking the 3-chevron nav buttons, or through the 'Select Chapter' menu.
+          Change chapters with the <<< >>> buttons, or through the 'Select Chapter' menu.
           <br><br>
           Go back to the Bombard Publishing home page by using the left-most 'return' button.
           <br><br>
@@ -211,7 +236,7 @@
 
     <div class="copyright">
       <p style="font-size: 1.5vh; color:#669988;">
-        <i>© 2023 Bombard Publishing. All rights reserved.</i>
+        <i>© 2024 Bombard Publishing. All rights reserved.</i>
       </p>
       </div>
 
@@ -219,11 +244,11 @@
   // COMIC DETAILS, UPDATE WITH PAGE NUMBERS AND TITLES (2/2)
   const comicData = {
     chapters: [
-      { pages: 7, name: "Test Chapter 1" }, // U could add a ' , format: "webm" ' collumn for variable file types
-      { pages: 5, name: "Test Chapter 2" },
-      { pages: 17, name: "Test Chapter 3" },
-      { pages: 32, name: "Test Chapter 4" },
-      { pages: 21, name: "Test Chapter 5" }
+      { pages: 7, name: "Prologue" }, // U could add a ' , format: "webm" ' collumn for variable file types
+      { pages: 5, name: "Chapter 1" },
+      { pages: 17, name: "Chapter 2" },
+      { pages: 32, name: "Chapter 3" },
+      { pages: 21, name: "Chapter 4" }
     ]
   };
   //initial state
@@ -242,6 +267,7 @@
     pageCounter.textContent = `${currentPage}/${chapterData.pages}`;
     chaptername.textContent = `${chapterData.name}`
     pbar.style.width = (currentPage - 1)/(chapterData.pages - 1)*100 + '%';
+    comicImage.alt = `${chapterData.name}, page ${currentPage}.`
   }
 
   // navigation

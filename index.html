@@ -20,44 +20,65 @@
 <div class="container">
 
   <div class="left-container">
+
     <a href="/">
-    <div class="logodiv logodivsize">
+    <div class="logodiv1 logodivsize backbutt">
+      <div class="logodiv2 frontbutt"></div>
     </div></a>
+
     <div class="L1">
-      <div class="L2">
+
         <div class="calc-W-screen screencode" id="screen"></div>
+
         <div class="calc-row1">
-          <div class="buttonA bigbutt" id="buttonA" onclick="loadPage('frontpage.html')"></div>
-          <div class="buttonB bigbutt" id="buttonB" onclick="loadPage('aboutbombard.html')"></div>
-          <div class="buttonC bigbutt" id="buttonC" onclick="loadPage('contact.html')"></div>
-          <div class="buttonD bigbutt" id="buttonD" onclick="loadPage('info.html')"></div>
+          <div class="A1 bigbutt backbutt">
+            <div class="A2 frontbutt" id="buttonA" onclick="loadPage('frontpage.html')"></div></div>
+          <div class="B1 bigbutt backbutt">
+            <div class="B2 frontbutt" id="buttonB" onclick="loadPage('aboutbombard.html')"></div></div>
+          <div class="C1 bigbutt backbutt">
+            <div class="C2 frontbutt" id="buttonC" onclick="loadPage('contact.html')"></div></div>
+          <div class="D1 bigbutt backbutt">
+            <div class="D2 frontbutt" id="buttonD" onclick="loadPage('info.html')"></div></div>
+          </div>
+        <div class="calc-row1">
+          <div class="E1 bigbutt backbutt">
+            <div class="E2 frontbutt" id="buttonE" onclick="loadPage('solswp.html')"></div></div>
+          <div class="F1 bigbutt backbutt"> <a href="https://www.twitter.com/viermeelectric" target="_blank">
+            <div class="F2 frontbutt" id="buttonF"></div></a></div>
+          <div class="G1 bigbutt backbutt">
+            <div class="G2 frontbutt" id="buttonG"></div></div>
+          <div class="H1 bigbutt backbutt">
+            <div class="H2 frontbutt" id="buttonH" onclick="loadPage('merch.html')"></div></div>
           </div>
         <div class="calc-row2">
-          <div class="buttonE bigbutt" id="buttonE" onclick="loadPage('solswp.html')"></div>
-          <div class="buttonF bigbutt" id="buttonF">
-            <a href="https://www.twitter.com/viermeelectric" target="_blank">
-              <div  style="height:100%; width:100%;"> </div> </a> </div>
-          <div class="buttonG bigbutt" id="buttonG"></div> <!-- bomb button, see script -->
-          <div class="buttonH bigbutt" id="buttonH" onclick="loadPage('merch.html')"></div>
+          <div class="b71 smallbutt backbutt">
+            <div class="b72 frontbutt" id="button7" onclick="appendNumber(7)"></div></div>
+          <div class="b81 smallbutt backbutt">
+            <div class="b82 frontbutt" id="button8" onclick="appendNumber(8)"></div></div>
+          <div class="b91 smallbutt backbutt">
+            <div class="b92 frontbutt" id="button9" onclick="appendNumber(9)"></div></div>
+          <div class="I1 longbutt backbutt">
+            <div class="I2 frontbutt" id="buttonI" onclick="send()"></div></div>
         </div>
-        <div class="calc-row3">
-          <div class="button7 smallbutt" id="button7" onclick="appendNumber(7)"></div>
-          <div class="button8 smallbutt" id="button8" onclick="appendNumber(8)"></div>
-          <div class="button9 smallbutt" id="button9" onclick="appendNumber(9)"></div>
-          <div class="buttonI longbutt" id="buttonI" onclick="send()"></div>
+        <div class="calc-row2">
+          <div class="b41 smallbutt backbutt">
+            <div class="b42 frontbutt" id="button4" onclick="appendNumber(4)"></div></div>
+          <div class="b51 smallbutt backbutt">
+            <div class="b52 frontbutt" id="button5" onclick="appendNumber(5)"></div></div>
+          <div class="b61 smallbutt backbutt">
+            <div class="b62 frontbutt" id="button6" onclick="appendNumber(6)"></div></div>
+          <div class="J1 longbutt backbutt">
+            <div class="J2 frontbutt" id="buttonJ" onclick="backspace()"></div></div>
         </div>
-        <div class="calc-row4">
-          <div class="button4 smallbutt" id="button4" onclick="appendNumber(4)"></div>
-          <div class="button5 smallbutt" id="button5" onclick="appendNumber(5)"></div>
-          <div class="button6 smallbutt" id="button6" onclick="appendNumber(6)"></div>
-          <div class="buttonJ longbutt" id="buttonJ" onclick="backspace()"></div>
-        </div>
-        <div class="calc-row5">
-          <div class="button1 smallbutt" id="button1" onclick="appendNumber(1)"></div>
-          <div class="button2 smallbutt" id="button2" onclick="appendNumber(2)"></div>
-          <div class="button3 smallbutt" id="button3" onclick="appendNumber(3)"></div>
-          <div class="button0 smallbutt" id="button0" onclick="appendNumber(0)"></div>
-        </div>
+        <div class="calc-row2">
+          <div class="b11 smallbutt backbutt">
+            <div class="b12 frontbutt" id="button1" onclick="appendNumber(1)"></div></div>
+          <div class="b21 smallbutt backbutt">
+            <div class="b22 frontbutt" id="button2" onclick="appendNumber(2)"></div></div>
+          <div class="b31 smallbutt backbutt">
+            <div class="b32 frontbutt" id="button3" onclick="appendNumber(3)"></div></div>
+          <div class="b01 smallbutt backbutt">
+            <div class="b02 frontbutt" id="button0" onclick="appendNumber(0)"></div></div>
         </div>
       </div>
     </div>
@@ -74,7 +95,7 @@
 
   <div class="copyright">
   <p style="font-size: 1.5vh; color:#669988;">
-    <i>© 2023 Bombard Publishing. All rights reserved.</i>
+    <i>© 2024 Bombard Publishing. All rights reserved.</i>
   </p>
 </div>
 </body>
@@ -87,13 +108,13 @@
       position: fixed;
       display: none;
       white-space: nowrap;
-      font-size: 30px;
+      font-size: 270%;
       color: #ff0000;
       text-align: center;
       font-family: Impact;
       user-select: none;
       pointer-events: none;
-      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: black;
       left:-50px;
     }

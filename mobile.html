@@ -17,104 +17,94 @@
 </head>
 
 <style>
-
   body{
     touch-action: none;
+    background: black;
   }
-
-  .mobcontainer {
-    height:93vh;
-    width:100%;
+  .mobupcontainer{
+    height:25%;
+    width: 100vw;
     position: fixed;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display:block;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-  }
-
-  .moblogodiv {
-    aspect-ratio:2/1;
-    position: absolute;
-    height:15%;
-    padding-bottom: 2%;
     left:50%;
     transform: translate(-50%);
-    top:0%;
+    top:0px;
   }
-
-  .mob1 {
-    position: absolute;
-    top:17%;
-    width:100%;
-    height:100%;
-    display: flex;
-  }
-
-  .mob2{
-    margin-left: 3px;
-    aspect-ratio: 1/8;
-    position: absolute;
-    left:0px;
+  .mobdowncontainer{
     height:75%;
-    display: block;
-    padding-left: 2vw;
+    width: 100vw;
+    position: fixed;
+    left:50%;
+    transform: translate(-50%);
+    bottom:0px;
   }
-
-  .mob3{
+  .mobilevar{
+    height: 90%;
     position: absolute;
-    min-width: 77vw;
-    right:1vw;
-    height:82%;
-    padding-left: 2vw;
+    width:95%;
+    top:0%;
+    left:50%;
+    transform: translate(-50%);
+    border:2px solid #1aff87;
+    background: linear-gradient(0deg, #1aff87 -50%, #000000 20%);
   }
-
+  .moblogodiv{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    height:58%;
+    margin-top: 1%;
+    width: 67%;
+  }
+  .mobrow{
+    position: absolute;
+    left:50%;
+    transform: translate(-50%);
+    top:62%;
+    width:95%;
+    aspect-ratio:8;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .mobbuttsize{
-    aspect-ratio: 1/1;
-    width: 100%;
-    cursor: pointer;
-    margin-bottom: 1vh;
+    aspect-ratio:1;
+    height:100%;
   }
+</style>
 
+<body>
 
-  </style>
+  <div class="mobupcontainer">
+    <div class="moblogodiv logodiv1 backbutt"> <a href="/"> <div class="logodiv2 frontbutt"></div> </a></div>
+    <div class="mobrow">
+      <div class="A1 mobbuttsize backbutt">
+        <div class="A2 frontbutt" id="buttonA" onclick="loadPage('frontpage.html')"></div></div>
+      <div class="B1 mobbuttsize backbutt">
+        <div class="B2 frontbutt" id="buttonB" onclick="loadPage('aboutbombard.html')"></div></div>
+      <div class="C1 mobbuttsize backbutt">
+        <div class="C2 frontbutt" id="buttonC" onclick="loadPage('contact.html')"></div></div>
+      <div class="G1 mobbuttsize backbutt">
+        <div class="G2 frontbutt" id="buttonG"></div></div>
+      <div class="E1 mobbuttsize backbutt">
+        <div class="E2 frontbutt" id="buttonE" onclick="loadPage('solswp.html')"></div></div>
+      <div class="F1 mobbuttsize backbutt"> <a href="https://www.twitter.com/viermeelectric" target="_blank">
+        <div class="F2 frontbutt" id="buttonF"></div></a></div>
+      <div class="D1 mobbuttsize backbutt">
+        <div class="D2 frontbutt" id="buttonD" onclick="loadPage('info.html')"></div></div>
+      <div class="H1 mobbuttsize backbutt">
+        <div class="H2 frontbutt" id="buttonH" onclick="loadPage('merch.html')"></div></div>
+      </div>
+    </div>
 
-<body style="background: black;">
-
-    <div class="mobcontainer">
-        <a href="mobile.html">
-          <div class="logodiv moblogodiv"></div>
-        </a>
-
-        <div class="mob1">
-
-          <div class="mob2">
-            <div class="buttonA mobbuttsize" id="buttonA" onclick="loadPage('frontpage.html')"></div>
-            <div class="buttonB mobbuttsize" id="buttonB" onclick="loadPage('aboutbombard.html')"></div>
-            <div class="buttonC mobbuttsize" id="buttonC" onclick="loadPage('contact.html')"></div>
-            <div class="buttonD mobbuttsize" id="buttonD" onclick="loadPage('info.html')"></div>
-            <div class="buttonE mobbuttsize" id="buttonE" onclick="loadPage('solswp.html')"></div>
-            <div class="buttonF mobbuttsize" id="buttonF">
-              <a href="https://www.twitter.com/viermeelectric" target="_blank">
-                <div  style="height:100%; width:100%;"> </div> </a> </div>
-            <div class="buttonG mobbuttsize" id="buttonG"></div> <!-- bomb button, see script -->
-            <div class="buttonH mobbuttsize" id="buttonH" onclick="loadPage('merch.html')"></div>
-          </div>
-
-          <div class="mob3">
-            <div class="varcontentbrd">
-            <iframe id="varcontent" src="frontpage.html" class="iframe"></iframe>
-          </div>
-          </div>
-        </div>
-
+  <div class="mobdowncontainer">
+        <div class="mobilevar">
+        <iframe id="varcontent" src="frontpage.html" class="iframe"></iframe>
+      </div>
     </div>
 
   <div class="copyright">
   <p style="font-size: 1.5vh; color:#669988;">
-    <i>© 2023 Bombard Publishing. All rights reserved.</i>
+    <i>© 2024 Bombard Publishing. All rights reserved.</i>
   </p>
 </div>
 

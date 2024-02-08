@@ -1,186 +1,162 @@
-.logodiv {
+.logodiv1{
   background: url("imgass/logo_1.svg") no-repeat;
 }
-.logodiv:hover {
+.logodiv2{
   background: url("imgass/logo_2.svg") no-repeat;
 }
-.buttonA {
+.A1{
   background: url("imgass/buttonA_1.svg") no-repeat;
 }
-.buttonA:hover {
+.A2{
   background: url("imgass/buttonA_2.svg") no-repeat;
 }
-.buttonB {
+.B1{
   background: url("imgass/buttonB_1.svg") no-repeat;
 }
-.buttonB:hover {
+.B2{
   background: url("imgass/buttonB_2.svg") no-repeat;
 }
-.buttonC {
+.C1{
   background: url("imgass/buttonC_1.svg") no-repeat;
 }
-.buttonC:hover {
+.C2{
   background: url("imgass/buttonC_2.svg") no-repeat;
 }
-.buttonD {
+.D1{
   background: url("imgass/buttonD_1.svg") no-repeat;
 }
-.buttonD:hover {
+.D2{
   background: url("imgass/buttonD_2.svg") no-repeat;
 }
-.buttonE {
+.E1{
   background: url("imgass/buttonE_1.svg") no-repeat;
 }
-.buttonE:hover {
+.E2{
   background: url("imgass/buttonE_2.svg") no-repeat;
 }
-.buttonF {
+.F1{
   background: url("imgass/buttonF_1.svg") no-repeat;
 }
-.buttonF:hover {
+.F2{
   background: url("imgass/buttonF_2.svg") no-repeat;
 }
-.buttonG {
+.G1{
   background: url("imgass/buttonG_1.svg") no-repeat;
 }
-.buttonG:hover {
+.G2{
   background: url("imgass/buttonG_2.svg") no-repeat;
 }
-.buttonH {
+.H1{
   background: url("imgass/buttonH_1.svg") no-repeat;
 }
-.buttonH:hover {
+.H2{
   background: url("imgass/buttonH_2.svg") no-repeat;
 }
-.buttonI {
+.I1{
   background: url("imgass/buttonI_1.svg") no-repeat;
 }
-.buttonI:hover {
+.I2{
   background: url("imgass/buttonI_2.svg") no-repeat;
 }
-.buttonJ {
+.J1{
   background: url("imgass/buttonJ_1.svg") no-repeat;
 }
-.buttonJ:hover {
+.J2{
   background: url("imgass/buttonJ_2.svg") no-repeat;
 }
-.button1 {
-  background: url("imgass/button1_1.svg") no-repeat;
-}
-.button1:hover {
-  background: url("imgass/button1_2.svg") no-repeat;
-}
-.button2 {
-  background: url("imgass/button2_1.svg") no-repeat;
-}
-.button2:hover {
-  background: url("imgass/button2_2.svg") no-repeat;
-}
-.button3 {
-  background: url("imgass/button3_1.svg") no-repeat;
-}
-.button3:hover {
-  background: url("imgass/button3_2.svg") no-repeat;
-}
-.button4 {
-  background: url("imgass/button4_1.svg") no-repeat;
-}
-.button4:hover {
-  background: url("imgass/button4_2.svg") no-repeat;
-}
-.button5 {
-  background: url("imgass/button5_1.svg") no-repeat;
-}
-.button5:hover {
-  background: url("imgass/button5_2.svg") no-repeat;
-}
-.button6 {
-  background: url("imgass/button6_1.svg") no-repeat;
-}
-.button6:hover {
-  background: url("imgass/button6_2.svg") no-repeat;
-}
-.button7 {
-  background: url("imgass/button7_1.svg") no-repeat;
-}
-.button7:hover {
-  background: url("imgass/button7_2.svg") no-repeat;
-}
-.button8 {
-  background: url("imgass/button8_1.svg") no-repeat;
-}
-.button8:hover {
-  background: url("imgass/button8_2.svg") no-repeat;
-}
-.button9 {
-  background: url("imgass/button9_1.svg") no-repeat;
-}
-.button9:hover {
-  background: url("imgass/button9_2.svg") no-repeat;
-}
-.button0 {
+.b01{
   background: url("imgass/button0_1.svg") no-repeat;
 }
-.button0:hover {
+.b02{
   background: url("imgass/button0_2.svg") no-repeat;
 }
-.buttonprev1 {
-  background: url("imgass/buttonprev1_1.svg") no-repeat;
+.b11{
+  background: url("imgass/button1_1.svg") no-repeat;
 }
-.buttonprev1:hover {
-  background: url("imgass/buttonprev1_2.svg") no-repeat;
+.b12{
+  background: url("imgass/button1_2.svg") no-repeat;
 }
-.buttonnext1 {
-  background: url("imgass/buttonnext1_1.svg") no-repeat;
+.b21{
+  background: url("imgass/button2_1.svg") no-repeat;
 }
-.buttonnext1:hover {
-  background: url("imgass/buttonnext1_2.svg") no-repeat;
+.b22{
+  background: url("imgass/button2_2.svg") no-repeat;
 }
-.selectcpt {
-  background: url("imgass/selectcpt_1.svg") no-repeat;
+.b31{
+  background: url("imgass/button3_1.svg") no-repeat;
 }
-.selectcpt:hover {
-  background: url("imgass/selectcpt_2.svg") no-repeat;
+.b32{
+  background: url("imgass/button3_2.svg") no-repeat;
 }
-.buttonnextcap {
-  background: url("imgass/buttonnextcap_1.svg") no-repeat;
+.b41{
+  background: url("imgass/button4_1.svg") no-repeat;
 }
-.buttonnextcap:hover {
-  background: url("imgass/buttonnextcap_2.svg") no-repeat;
+.b42{
+  background: url("imgass/button4_2.svg") no-repeat;
 }
-.buttonnextpag {
-  background: url("imgass/buttonnextpag_1.svg") no-repeat;
+.b51{
+  background: url("imgass/button5_1.svg") no-repeat;
 }
-.buttonnextpag:hover {
-  background: url("imgass/buttonnextpag_2.svg") no-repeat;
+.b52{
+  background: url("imgass/button5_2.svg") no-repeat;
 }
-.buttonprevcap {
-  background: url("imgass/buttonprevcap_1.svg") no-repeat;
+.b61{
+  background: url("imgass/button6_1.svg") no-repeat;
 }
-.buttonprevcap:hover {
-  background: url("imgass/buttonprevcap_2.svg") no-repeat;
+.b62{
+  background: url("imgass/button6_2.svg") no-repeat;
 }
-.buttonprevpag {
-  background: url("imgass/buttonprevpag_1.svg") no-repeat;
+.b71{
+  background: url("imgass/button7_1.svg") no-repeat;
 }
-.buttonprevpag:hover {
-  background: url("imgass/buttonprevpag_2.svg") no-repeat;
+.b72{
+  background: url("imgass/button7_2.svg") no-repeat;
 }
-.return {
+.b81{
+  background: url("imgass/button8_1.svg") no-repeat;
+}
+.b82{
+  background: url("imgass/button8_2.svg") no-repeat;
+}
+.b91{
+  background: url("imgass/button9_1.svg") no-repeat;
+}
+.b92{
+  background: url("imgass/button9_2.svg") no-repeat;
+}
+.return1{
   background: url("imgass/return_1.svg") no-repeat;
 }
-.return:hover {
+.return2{
   background: url("imgass/return_2.svg") no-repeat;
 }
-.help {
+.nextp1{
+  background: url("imgass/buttonnextpag_1.svg") no-repeat;
+}
+.nextp2{
+  background: url("imgass/buttonnextpag_2.svg") no-repeat;
+}
+.nextc1{
+  background: url("imgass/buttonnextcap_1.svg") no-repeat;
+}
+.nextc2{
+  background: url("imgass/buttonnextcap_2.svg") no-repeat;
+}
+.prevp1{
+  background: url("imgass/buttonprevpag_1.svg") no-repeat;
+}
+.prevp2{
+  background: url("imgass/buttonprevpag_2.svg") no-repeat;
+}
+.prevc1{
+  background: url("imgass/buttonprevcap_1.svg") no-repeat;
+}
+.prevc2{
+  background: url("imgass/buttonprevcap_2.svg") no-repeat;
+}
+.help1{
   background: url("imgass/help_1.svg") no-repeat;
 }
-.help:hover {
+.help2{
   background: url("imgass/help_2.svg") no-repeat;
-}
-.buttonread{
-  background: url("imgass/buttonread_1.svg") no-repeat;
-}
-.buttonread:hover{
-  background: url("imgass/buttonread_2.svg") no-repeat;
 }

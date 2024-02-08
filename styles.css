@@ -1,4 +1,5 @@
 @font-face { font-family: Aldrich Regular; src: url('fonts/Aldrich/Aldrich-Regular.ttf'); }
+@font-face { font-family: Impact; src: url('fonts/impact.ttf'); }
 
 body {
     height: 100vh;
@@ -26,7 +27,8 @@ p {
   font-family: Verdana, sans-serif;
   color:#ffffff;
   text-align: left;
-  text-indent: 4vh;
+  text-indent: 6%;
+  font-size: 85%;
 }
 
 em {
@@ -77,14 +79,13 @@ em {
   width:66.667%;
   box-sizing: border-box;
   padding-top:5.5%;
+  padding-left:1%;
   z-index: 1;
 }
 
 .logodivsize {
   width:125%;
-  height:23.5%;
-  padding-bottom: 6%;
-  z-index: 0;
+  height:27%;
 }
 
 .L1 {
@@ -92,13 +93,7 @@ em {
   height:60%;
   width:100%;
   box-sizing: border-box;
-  padding:5%;
-}
-
-.L2 {
-  height:100%;
-  width:100%;
-  box-sizing: border-box;
+  padding:7%;
 }
 
 .calc-pad-up {
@@ -111,17 +106,12 @@ em {
   width:100%;
   border: 2px solid #1aff87;
   box-sizing: border-box;
-  font-size: 6.08vh;
+  font-size:360%;
   font-family: 'Aldrich Regular';
   align-items: center;
   text-align: center;
   background-color: black;
   color: #88BB88;
-}
-
-.calc-interbutt {
-  height:2.095%;
-  width:100%;
 }
 
 .calc-row1 {
@@ -134,25 +124,7 @@ em {
 }
 
 .calc-row2 {
-  padding-top: 2.5%;
-  height:16.7%;
-  width:100%;
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.calc-row3 {
-  padding-top: 2.5%;
-  height:15.2%;
-  width:100%;
-  display:flex;
-  justify-content:space-between;
-  align-items: center;
-}
-
-.calc-row4 {
-  padding-top: 1%;
+  margin-top: 2%;
   height:15.2%;
   width:100%;
   display:flex;
@@ -160,32 +132,46 @@ em {
   align-items: center;
 }
 
-.calc-row5 {
-  padding-top: 1%;
-  height:15.2%;
+.backbutt{
+  z-index: 1;
+}
+
+.frontbutt{
+  z-index: 2;
   width:100%;
-  display:flex;
-  justify-content:flex-start;
-  align-items: center;
+  height:100%;
+  opacity:0%;
+  transition: opacity 0.15s;
+  cursor: pointer;
+}
+
+.frontbutt:hover{
+  opacity:100%;
 }
 
 .bigbutt {
+  position:relative;
+  left: 0px;
+  box-sizing: border-box;
   height:100%;
   width:23%;
-  cursor: pointer;
 }
 
 .smallbutt {
+  position:relative;
+  left: 0px;
+  box-sizing: border-box;
   height:100%;
-  width: 17%;
-  margin-right:1%;
-  cursor: pointer;
+  width: 17.2%;
+  margin-right: 0.5%;
 }
 
 .longbutt {
+  position:relative;
+  left: 0px;
+  box-sizing: border-box;
   height:100%;
-  width: 48%;
-  cursor: pointer;
+  width: 47%;
 }
 
 .buttlink {
@@ -195,10 +181,11 @@ em {
 }
 
 .R1 {
-  z-index:3;
-  height: 95%;
-  width: 100%;
-  padding:5%;
+  position: absolute;
+  z-index:1;
+  width: 66.666%;
+  aspect-ratio: 740/700;
+  bottom:0%;
 }
 
 .iframe {
