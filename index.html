@@ -16,7 +16,7 @@
   </script>
 </head>
 
-<body style="background: black;">
+<body>
 <div class="container">
 
   <div class="left-container">
@@ -94,7 +94,7 @@
   </div>
 
   <div class="copyright">
-  <p style="font-size: 1.5vh; color:#669988;">
+  <p style="font-size: 1.5vh; color:#669988; text-shadow: 2px 2px 4px #0f0f0f;">
     <i>© 2025 Bombard Publishing. All rights reserved.</i>
   </p>
 </div>
@@ -194,6 +194,10 @@
     function send(){
       if (code === '98556'){
         loadPage('meal.html');
+        screen.classList.add('correctcode');
+      }
+      if (code === '0000'){
+        alert('NUKES LAUNCHED');
         screen.classList.add('correctcode');
       } else {
         displayIncorrectCode();

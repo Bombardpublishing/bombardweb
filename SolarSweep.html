@@ -84,6 +84,7 @@
     z-index: 1;
     margin-bottom: 1%;
     box-sizing: border-box;
+    background-color: black;
   }
 
   .navigbutts{
@@ -108,12 +109,14 @@
     text-align: center;
     font-size:90%;
     padding-top: 0.5%;
+    text-shadow: 2px 2px 4px #000000;
   }
 
   .pagenum {
     height:100%;
     min-width:12%;
     padding-top: 0.5%;
+    text-shadow: 2px 2px 4px #000000;
   }
 
   .selectcap {
@@ -129,6 +132,7 @@
     z-index: 2;
     /* background-color: black; */
     padding-top: 0.6%;
+    text-shadow: 2px 2px 4px #000000;
   }
 
   .selectcap:hover {
@@ -186,7 +190,7 @@
 
 </style>
 
-  <body style="text-align: center; justify-content:center; background: linear-gradient(0deg, #1aff87 -50%, #012020 30%);">
+  <body id="body" style="text-align: center; justify-content:center;"> <!-- background:linear-gradient(0deg, #1aff87 -50%, #000000 30%); -->
 
     <div class="reader1">
       <img id="comicImage" src="" alt="">
@@ -212,6 +216,7 @@
             <div class="dropdownchapters">
               <a onclick="loadchapter(1)">Prologue</a>
               <a onclick="loadchapter(2)">Test Chapter</a>
+              <a onclick="loadchapter(3)">Gradient Test</a>
               <!-- <a onclick="loadchapter(3)">Chapter 2</a>
               <a onclick="loadchapter(4)">Chapter 3</a>
               <a onclick="loadchapter(5)">Chapter 4</a> -->
@@ -235,10 +240,12 @@
     </div>
 
     <div class="copyright">
-      <p style="font-size: 1.5vh; color:#669988;">
+      <p style="font-size: 1.5vh; color:#669988; text-shadow: 2px 2px 4px #0f0f0f;">
         <i>© 2025 Bombard Publishing. All rights reserved.</i>
       </p>
       </div>
+
+  <!-- <script src="interactivebg.js"></script> Loading the background stuff-->
 
   <script>
   // COMIC DETAILS, UPDATE WITH PAGE NUMBERS AND TITLES (2/2)
@@ -246,15 +253,29 @@
     chapters: [
       { pages: 1, name: "Prologue" }, // U could add a ' , format: "webm" ' collumn for variable file types
       { pages: 9, name: "Test Chapter" },
+      { pages: 20, name: "Background testing chapter" }
       //{ pages: 17, name: "Chapter 2" },
       //{ pages: 32, name: "Chapter 3" },
       //{ pages: 21, name: "Chapter 4" }
     ]
   };
+
+  // BACKGROUND COLOR RULES. Use sparingly for effect, its gotta be either subtle or a surprise everytime
+  const bgRules = [
+    // {chapter: 1, start: 1, end: 1, background: "linear-gradient(0deg, blue -50%, #000000 20%)"}, //prologue blue bg
+    {chapter: 2, start: 8, end: 8, background: "linear-gradient(0deg, red -50%, #000000 20%)"}, //orbital combat red bg
+    {chapter: 3, start: 3, end: 6, background: "linear-gradient(0deg, #1aff87 -50%, #000000 15%)"}, //subtle change
+    {chapter: 3, start: 10, end: 10, background: "#000000"}, //single frame test
+    {chapter: 3, start: 17, end: 20, background: "#222233"},
+  //  {chapter: 3, start: 3, end: 6, background: "#003355"},
+  //  {chapter: 3, start: 3, end: 6, background: "#003355"},
+  ];
+
   //initial state
   let currentChapter = 1;
   let currentPage = 1;
   const totalChapters = comicData.chapters.length;
+
   //update page function
   function updatePage() {
     const comicImage = document.getElementById("comicImage");
@@ -267,7 +288,15 @@
     pageCounter.textContent = `${currentPage}/${chapterData.pages}`;
     chaptername.textContent = `${chapterData.name}`
     pbar.style.width = (currentPage - 1)/(chapterData.pages - 1)*100 + '%';
-    comicImage.alt = `${chapterData.name}, page ${currentPage}.`
+    comicImage.alt = `${chapterData.name}, page ${currentPage}.`;
+
+    // Background changing
+    const bgMatch = bgRules.find(rule =>
+      rule.chapter === currentChapter &&
+      currentPage >= rule.start &&
+      currentPage <= rule.end
+    );
+    document.body.style.background = bgMatch ? bgMatch.background : "";
   }
 
   // navigation
@@ -339,5 +368,6 @@
   updatePage();
 
 </script>
+
 </body>
 </html>
