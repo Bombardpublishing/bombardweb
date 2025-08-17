@@ -12,16 +12,19 @@
 <style>
   .reader1 {
     width:100%;
-    height:85%;
+    height:87vh;
     position: absolute;
-    top:2vh;
+    top:1vh;
     left:50%;
     transform: translate(-50%);
     box-sizing: border-box;
+    background: rgba(0, 0, 0, 0)
   }
   .reader1 img{
     max-width: 100%;
     max-height: 100%;
+    top: 50%;
+    left: 50%;
     width: auto;
     height: auto;
     z-index: 1;
@@ -49,7 +52,7 @@
     position: fixed;
     left:50%;
     transform: translate(-50%);
-    top:88vh;
+    bottom:4vh;
     display: flex;
     justify-content: center;
     font-family: 'Aldrich Regular';
@@ -262,11 +265,11 @@
 
   // BACKGROUND COLOR RULES. Use sparingly for effect, its gotta be either subtle or a surprise everytime
   const bgRules = [
-    // {chapter: 1, start: 1, end: 1, background: "linear-gradient(0deg, blue -50%, #000000 20%)"}, //prologue blue bg
+    {chapter: 1, start: 1, end: 1, background: "linear-gradient(90deg, blue -50%, #000000 40%)"}, //prologue blue bg
     {chapter: 2, start: 8, end: 8, background: "linear-gradient(0deg, red -50%, #000000 20%)"}, //orbital combat red bg
-    {chapter: 3, start: 3, end: 6, background: "linear-gradient(0deg, #1aff87 -50%, #000000 15%)"}, //subtle change
+    {chapter: 3, start: 3, end: 3, background: "linear-gradient(0deg, #998351 -20%, #65919c 20%, #000000 70%)"}, //bafroom
     {chapter: 3, start: 10, end: 10, background: "#000000"}, //single frame test
-    {chapter: 3, start: 17, end: 20, background: "#222233"},
+    {chapter: 3, start: 17, end: 20, background: "#111122"}, //ugly bg
   //  {chapter: 3, start: 3, end: 6, background: "#003355"},
   //  {chapter: 3, start: 3, end: 6, background: "#003355"},
   ];

@@ -54,7 +54,7 @@ em {
   height:3vh;
   width:48vh;
   position:fixed;
-  top: 97%;
+  bottom: 0.1vh;
   left:50%;
   transform: translate(-50%, -50%);
   display:flex;
