@@ -232,14 +232,15 @@ em {
   position: absolute;
   white-space: nowrap;
   will-change: transform;
-  animation: tickerslide 40s linear infinite;
+  animation: tickerslide 20s linear infinite;
   bottom:15%;
   font-size: 2vh;
   font-family: Verdana;
+  text-align: left;
 }
 
 @keyframes tickerslide {
-  0% {transform: translateX(120%);}
+  0% {transform: translateX(35vw);}
   100% {transform: translateX(-100%);}
 }
 
