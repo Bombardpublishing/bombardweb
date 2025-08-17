@@ -224,7 +224,7 @@ em {
   width:71%;
   right:0%;
   top:0%;
-  /* overflow: hidden; */
+  overflow: hidden;
   }
 
 .tickertext {
@@ -242,8 +242,8 @@ em {
 }
 
 @keyframes tickerslide {
-  0% {transform: translateX(26vw);}
-  100% {transform: translateX(-120%);}
+  0% {transform: translateX(28vw);}
+  100% {transform: translateX(-100%);}
 }
 
 .iframe {
