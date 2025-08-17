@@ -296,8 +296,12 @@
       currentPage >= rule.start &&
       currentPage <= rule.end
     );
-    document.body.style.background = bgMatch ? bgMatch.background : "background:linear-gradient(0deg, #1aff87 -50%, #000000 20%)";
-  }
+    if (bgMatch) {
+        document.body.style.background = bgMatch.background;
+      } else {
+        document.body.style.background = "linear-gradient(0deg, #1aff87 -50%, #000000 20%)"; // fallback
+      }
+    }
 
   // navigation
   document.addEventListener('keydown', function(event) {
