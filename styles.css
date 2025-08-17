@@ -184,8 +184,63 @@ em {
   position: absolute;
   z-index:1;
   width: 66.666%;
-  aspect-ratio: 740/700;
+  aspect-ratio: 740/650;
+  top:14.5%;
+}
+
+.R2 {
+  position: absolute;
+  z-index:1;
+  width: 65.666%;
   bottom:0%;
+  height:4.7%;
+  border:2px solid #1aff87;
+  padding-left: 1%;
+  }
+
+.breaking {
+  position: absolute;
+  height: 90%;
+  width: 28%;
+  left:0%;
+  top:0%;
+  overflow: hidden;
+  font-family: 'Aldrich Regular';
+  font-size: 3.8vh;
+  animation: rainbowtext1 0.6s infinite;
+  text-align: center;
+}
+
+@keyframes rainbowtext1 {
+  0% {color:white}
+  50% {color:#95ff00}
+  100% {color:#white}
+}
+
+.slidingtextbox {
+  position: absolute;
+  z-index:1;
+  height:90%;
+  width:71%;
+  right:0%;
+  top:0%;
+  overflow: hidden;
+  }
+
+.tickertext {
+  z-index: 3;
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: tickerslide 40s linear infinite;
+  bottom:15%;
+  font-size: 2vh;
+  font-family: Verdana;
+}
+
+@keyframes tickerslide {
+  0% {transform: translateX(120%);}
+  100% {transform: translateX(-100%);}
 }
 
 .iframe {

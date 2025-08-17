@@ -89,6 +89,13 @@
         <iframe id="varcontent" src="frontpage.html" class="iframe"></iframe>
       </div>
       </div>
+
+      <div class="R2"> <!-- TICKER -->
+        <div class="breaking">BREAKING:</div>
+        <div class="slidingtextbox">
+          <div class="tickertext" id="ticker">text</div>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -224,5 +231,18 @@
         document.getElementById('varcontent').src = pageUrl;
         }
     </script>
+
+<!-- TICKER SCRIPT -->
+<script>
+  fetch("tickerscript.txt")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("ticker").textContent = data;
+    })
+    .catch(err => {
+      document.getElementById("ticker").textContent = "Ah fuck the ticker script didnt load in!!! FML!!!";
+    });
+
+</script>
 
 </html>
