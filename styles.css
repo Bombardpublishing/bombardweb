@@ -233,7 +233,7 @@ em {
   display: inline-block;
   white-space: nowrap;
   will-change: transform;
-  animation: tickerslide linear infinite 10s;
+  animation: tickerslide linear infinite 50s;
   bottom:10%;
   left:10%;
   font-size: 2.2vh;
