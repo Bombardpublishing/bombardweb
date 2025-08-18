@@ -215,11 +215,11 @@
           <div class="nbspacing navbutton nextp1 backbutt"><div class="frontbutt nextp2" onclick="nextPage()"></div></div>
           <div class="nbspacing navbutton nextc1 backbutt"><div class="frontbutt nextc2" onclick="nextChapter()"></div></div>
 
-          <div class="nbspacing selectcap">SELECT CHAPTER <!-- UPDATE CHAPTER TITLES HERE (1/2) -->
+          <div class="nbspacing selectcap">SELECT CHAPTER <!-- UPDATE CHAPTER TITLES HERE - JUST NUMBERS (1/2) -->
             <div class="dropdownchapters">
               <a onclick="loadchapter(1)">Prologue</a>
-              <a onclick="loadchapter(2)">Test Chapter</a>
-              <a onclick="loadchapter(3)">Gradient Test</a>
+              <a onclick="loadchapter(2)">Test 1</a>
+              <a onclick="loadchapter(3)">Test 2</a>
               <!-- <a onclick="loadchapter(3)">Chapter 2</a>
               <a onclick="loadchapter(4)">Chapter 3</a>
               <a onclick="loadchapter(5)">Chapter 4</a> -->
@@ -255,21 +255,21 @@
   const comicData = {
     chapters: [
       { pages: 1, name: "Prologue" }, // U could add a ' , format: "webm" ' collumn for variable file types
-      { pages: 9, name: "Test Chapter" },
-      { pages: 20, name: "Background testing chapter" }
+      { pages: 9, name: "1. Test Chapter" },
+      { pages: 20, name: "2. Background testing chapter" }
       //{ pages: 17, name: "Chapter 2" },
       //{ pages: 32, name: "Chapter 3" },
       //{ pages: 21, name: "Chapter 4" }
     ]
   };
 
-  // BACKGROUND COLOR RULES. Use sparingly for effect, its gotta be either subtle or a surprise everytime
+  // BACKGROUND COLOR RULES
   const bgRules = [
-    {chapter: 1, start: 1, end: 1, background: "linear-gradient(90deg, blue -50%, #000000 40%)"}, //prologue blue bg
+    {chapter: 1, start: 1, end: 1, background: "linear-gradient(90deg, blue -50%, #000000 30%)"}, //prologue blue bg
     {chapter: 2, start: 8, end: 8, background: "linear-gradient(0deg, red -50%, #000000 20%)"}, //orbital combat red bg
     {chapter: 3, start: 3, end: 3, background: "linear-gradient(0deg, #998351 -20%, #65919c 20%, #000000 70%)"}, //bafroom
-    {chapter: 3, start: 10, end: 10, background: "#000000"}, //single frame test
-    {chapter: 3, start: 17, end: 20, background: "#111122"}, //ugly bg
+    {chapter: 3, start: 7, end: 7, background: "#000000"}, //single frame test
+    {chapter: 3, start: 10, end: 10, background: "linear-gradient(0deg, #777722 -20%, #000000 20%)"}, //single frame test
   //  {chapter: 3, start: 3, end: 6, background: "#003355"},
   //  {chapter: 3, start: 3, end: 6, background: "#003355"},
   ];

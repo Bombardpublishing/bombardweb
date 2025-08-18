@@ -21,6 +21,8 @@
 
   <div class="left-container">
 
+    <div class="logoblocker"> </div>
+
     <a href="/">
     <div class="logodiv1 logodivsize backbutt">
       <div class="logodiv2 frontbutt"></div>
@@ -92,7 +94,7 @@
 
       <div class="R2"> <!-- TICKER -->
         <div class="breaking">BREAKING:</div>
-        <div class="slidingtextbox">
+        <div class="tickerbox">
           <div class="tickertext" id="ticker"></div>
         </div>
       </div>
@@ -204,8 +206,9 @@
         screen.classList.add('correctcode');
       }
       if (code === '0000'){
-        alert('NUKES LAUNCHED');
+        //document.body.style.background = "linear-gradient(0deg, #ff5039 -20%, #000000 40%)";
         screen.classList.add('correctcode');
+        alert('NUKES LAUNCHED');
       } else {
         displayIncorrectCode();
         updateScreen();
