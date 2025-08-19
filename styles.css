@@ -244,7 +244,7 @@ em {
   display: inline-block;
   white-space: nowrap;
   will-change: transform;
-  animation: tickerslide linear infinite 120s;
+  animation: tickerslide linear infinite 130s;
   bottom:12%;
   left:10%;
   font-size: 2.2vh;
@@ -254,7 +254,7 @@ em {
 
 @keyframes tickerslide {
   0% {transform: translateX(27.5vw);}
-  100% {transform: translateX(-110%);}
+  100% {transform: translateX(-105%);}
 }
 
 .iframe {
