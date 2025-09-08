@@ -23,14 +23,38 @@ a {
   text-decoration-color: #1aff87;
 }
 
-p {
+/* p {
   font-family: Verdana, sans-serif;
   color:#ffffff;
   text-align: left;
   text-indent: 6%;
   font-size: 100%;
+} */
+
+.paragraph{
+    font-family: Verdana, sans-serif;
+    color:#ffffff;
+    text-align: left;
+    text-indent: 6%;
+    font-size: 100%;
 }
 
+.asciiart{
+  text-indent: 0px;
+  text-align: center;
+  font-size: 10%;
+  color: #1aff87;
+  font-family: monospace;
+  line-height: 100%;
+}
+.asciiart2{
+  text-indent: 0px;
+  text-align: center;
+  font-size: 10%;
+  color: #ff5039;
+  font-family: monospace;
+  line-height: 100%;
+}
 em {
   color: #1aff87;
 }
@@ -225,6 +249,12 @@ em {
   0% {color:white}
   50% {color:#95ff00}
   100% {color:#white}
+}
+
+@keyframes rainbowtext2 {
+  0% {color:white}
+  50% {color:#ff5039}
+  100% {color:white}
 }
 
 .tickerbox {
