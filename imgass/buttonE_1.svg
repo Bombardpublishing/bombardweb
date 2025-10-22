@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100.96 100.96">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 78.81 78.81">
   <defs>
     <style>
       .cls-1 {
-        fill: url(#linear-gradient);
-      }
-
-      .cls-1, .cls-2, .cls-3 {
-        stroke-width: 0px;
+        fill: #1aff87;
       }
 
       .cls-2 {
-        fill: #000;
-      }
-
-      .cls-3 {
-        fill: #1aff87;
+        fill: url(#linear-gradient);
       }
     </style>
-    <linearGradient id="linear-gradient" x1="50.48" y1="99.96" x2="50.48" y2="1" gradientUnits="userSpaceOnUse">
+    <linearGradient id="linear-gradient" x1="39.41" y1="77.81" x2="39.41" y2="1" gradientUnits="userSpaceOnUse">
       <stop offset="0" stop-color="#17ff8b"/>
       <stop offset=".02" stop-color="#14df79"/>
       <stop offset=".06" stop-color="#0fab5d"/>
@@ -33,22 +25,22 @@
   </defs>
   <g id="default">
     <g>
-      <rect class="cls-1" x="1" y="1" width="98.96" height="98.96"/>
-      <path class="cls-3" d="M98.96,2v96.96H2V2h96.96M100.96,0H0v100.96h100.96V0h0Z"/>
+      <rect class="cls-2" x="1" y="1" width="76.81" height="76.81"/>
+      <path class="cls-1" d="m76.81,2v74.81H2V2h74.81m2-2H0v78.81h78.81V0h0Z"/>
     </g>
-    <g>
-      <polygon class="cls-2" points="41.45 21.91 41.45 21.91 9.57 36.72 23.22 66.07 9.57 36.72 41.45 21.91"/>
-      <polygon class="cls-3" points="35.07 91.56 23.22 66.07 35.07 91.56 60.27 79.85 60.27 79.85 35.07 91.56"/>
-      <polygon class="cls-3" points="60.27 79.85 54.82 79.85 36.18 88.51 12.63 37.84 41.45 24.44 41.45 21.91 9.57 36.72 23.22 66.07 35.07 91.56 60.27 79.85"/>
-      <polygon class="cls-3" points="29.39 68.73 41.45 63.12 41.45 46.93 23.2 55.41 29.39 68.73"/>
-      <polygon class="cls-3" points="34.16 31.05 40.35 44.37 41.45 43.86 41.45 27.67 34.16 31.05"/>
-      <polygon class="cls-3" points="36.75 84.57 46.91 79.85 41.45 79.85 41.45 66.19 30.56 71.25 36.75 84.57"/>
-      <rect class="cls-3" x="18.13" y="35.25" width="17.26" height="14.68" transform="translate(-15.46 15.25) rotate(-24.93)"/>
-      <path class="cls-3" d="M85.34,17.81v56.48h-38.84V17.81h38.84M87.34,15.81h-42.84v60.48h42.84V15.81h0Z"/>
-      <rect class="cls-3" x="48.99" y="21.04" width="17.17" height="14.68"/>
-      <rect class="cls-3" x="48.99" y="39.24" width="17.17" height="31.42"/>
-      <rect class="cls-3" x="69.06" y="54.94" width="13.77" height="15.71"/>
-      <rect class="cls-3" x="69.06" y="21.04" width="13.77" height="30.07"/>
-    </g>
+  </g>
+  <g id="Layer_9" data-name="Layer 9">
+    <polygon class="cls-1" points="10.06 14.36 10.06 21.54 15.9 25.78 15.9 14.36 25.77 14.36 25.77 9.87 10.06 9.87 10.06 14.36"/>
+    <polygon class="cls-1" points="19.93 33.01 10.06 33.01 10.06 37.51 25.77 37.51 25.77 33.01 25.77 19.81 19.93 19.81 19.93 33.01"/>
+    <polygon class="cls-1" points="10.06 46.93 10.06 53.76 15.62 57.79 15.62 46.93 25 46.93 25 42.66 10.06 42.66 10.06 46.93"/>
+    <polygon class="cls-1" points="19.45 64.67 10.06 64.67 10.06 68.94 25 68.94 25 64.67 25 52.11 19.45 52.11 19.45 64.67"/>
+    <polygon class="cls-1" points="47.26 33.01 47.26 9.87 41.42 9.87 41.42 33.01 39.41 33.01 39.41 37.51 41.42 37.51 47.26 37.51 47.26 33.01"/>
+    <polygon class="cls-1" points="43.62 59.85 40.8 56.63 40.8 65.72 43.62 68.94 49.18 68.94 49.18 42.66 43.62 42.66 43.62 59.85"/>
+    <polygon class="cls-1" points="37.39 14.36 39.41 14.36 39.41 9.87 37.39 9.87 31.55 9.87 31.55 14.36 31.55 37.51 37.39 37.51 37.39 14.36"/>
+    <polygon class="cls-1" points="36.06 42.66 30.5 42.66 30.5 68.94 36.06 68.94 38.88 65.72 38.88 56.63 36.06 59.85 36.06 42.66"/>
+    <polygon class="cls-1" points="53.81 46.93 63.2 46.93 63.2 57.79 68.75 53.76 68.75 46.93 68.75 42.66 53.81 42.66 53.81 46.93"/>
+    <rect class="cls-1" x="53.81" y="48.85" width="5.55" height="20.1"/>
+    <polygon class="cls-1" points="64.82 33.01 60.9 33.01 60.9 37.51 68.75 37.51 64.82 33.01"/>
+    <rect class="cls-1" x="53.05" y="9.87" width="5.84" height="27.64"/>
   </g>
 </svg>
