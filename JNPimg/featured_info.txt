@@ -1,4 +1,4 @@
-featured_description: A string of mutilated animal carcasses alert forestry agencies across Central Asia. The bizarre circumstances the animal remains are found it soon rule out poaching - the culprit, it seems, may not be entirely human.
+featured_description: (DEMONSTRATIVE) A string of mutilated animal carcasses alert forestry agencies across Central Asia. The bizarre circumstances the animal remains are found it soon rule out poaching - the culprit, it seems, may not be entirely human.
 featured_title: Determining the anatomy, range and behavior of the Central Asian Shrike.
 featured_author: Nurnazarov et al. (2054)
 featured_publisher: New Ecology - Volume 1, Issue 1
