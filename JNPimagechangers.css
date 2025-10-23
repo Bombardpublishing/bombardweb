@@ -1,0 +1,113 @@
+.img_logo1{
+  background: url("JNPimg/jnplogo_1.svg") no-repeat;
+}
+.img_logo2{
+  background: url("JNPimg/jnplogo_2.svg") no-repeat;
+}
+.AA_1{
+  background: url("JNPimg/tab_AA_1.png") no-repeat;
+  background-size: contain;
+}
+.AA_2{
+  background: url("JNPimg/tab_AA_2.png") no-repeat;
+  background-size: contain;
+}
+.AX_1{
+  background: url("JNPimg/tab_AX_1.png") no-repeat;
+  background-size: contain;
+}
+.AX_2{
+  background: url("JNPimg/tab_AX_2.png") no-repeat;
+  background-size: contain;
+}
+.DA_1{
+  background: url("JNPimg/tab_DA_1.png") no-repeat;
+  background-size: contain;
+}
+.DA_2{
+  background: url("JNPimg/tab_DA_2.png") no-repeat;
+  background-size: contain;
+}
+.NE_1{
+  background: url("JNPimg/tab_NE_1.png") no-repeat;
+  background-size: contain;
+}
+.NE_2{
+  background: url("JNPimg/tab_NE_2.png") no-repeat;
+  background-size: contain;
+}
+.TB_1{
+  background: url("JNPimg/tab_TB_1.png") no-repeat;
+  background-size: contain;
+}
+.TB_2{
+  background: url("JNPimg/tab_TB_2.png") no-repeat;
+  background-size: contain;
+}
+.ZZ_1{
+  background: url("JNPimg/tab_ZZ_1.png") no-repeat;
+  background-size: contain;
+}
+.ZZ_2{
+  background: url("JNPimg/tab_ZZ_2.png") no-repeat;
+  background-size: contain;
+}
+.HomeButt1{
+  background: url("JNPimg/button_home_1.png") no-repeat;
+  background-size: contain;
+}
+.HomeButt2{
+  background: url("JNPimg/button_home_2.png") no-repeat;
+  background-size: contain;
+}
+
+.InfoButt1{
+  background: url("JNPimg/button_info_1.png") no-repeat;
+  background-size: contain;
+}
+.InfoButt2{
+  background: url("JNPimg/button_info_2.png") no-repeat;
+  background-size: contain;
+}
+
+.ContactButt1{
+  background: url("JNPimg/button_contact_1.png") no-repeat;
+  background-size: contain;
+}
+.ContactButt2{
+  background: url("JNPimg/button_contact_2.png") no-repeat;
+  background-size: contain;
+}
+
+.ExclButt1{
+  background: url("JNPimg/button_excl_1.png") no-repeat;
+  background-size: contain;
+}
+.ExclButt2{
+  background: url("JNPimg/button_excl_2.png") no-repeat;
+  background-size: contain;
+}
+.TwtButt1{
+  background: url("JNPimg/button_twitter_1.png") no-repeat;
+  background-size: contain;
+}
+.TwtButt2{
+  background: url("JNPimg/button_twitter_2.png") no-repeat;
+  background-size: contain;
+}
+.BomButt1{
+  background: url("JNPimg/button_bombard_1.png") no-repeat;
+  background-size: contain;
+}
+.BomButt2{
+  background: url("JNPimg/button_bombard_2.png") no-repeat;
+  background-size: contain;
+}
+.QuestionButt1{
+  background: url("JNPimg/button_question_1.png") no-repeat;
+  background-size: contain;
+}
+.QuestionButt2{
+  background: url("JNPimg/button_question_2.png") no-repeat;
+  background-size: contain;
+}
