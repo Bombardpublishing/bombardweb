@@ -31,7 +31,7 @@ body {
   height:10%;
   max-height: 150px;
   width: 100%;
-  margin-top: 1%;
+  margin-top: 2vh;
 }
 
 .Div_Middle {
@@ -39,8 +39,9 @@ body {
   background:linear-gradient(0deg, #75a5b2 0%, #e7f6e0 100%);
   width: 90%;
   max-width: 1300px;
+  min-width: 800px;
   height:80%;
-  margin-top: 0.7%;
+  margin-top: 2vh;
   margin-right:auto;
   margin-left:auto;
   justify-content: space-between;
@@ -155,6 +156,7 @@ body {
   box-sizing: border-box;
   height:620px;
   width:270px;
+  min-width: 270px;
   margin: 12px;
   justify-content: center;
   display: block;
@@ -285,4 +287,10 @@ body {
 }
 .Div_Featured img:hover{
   transform: scale(1);
+}
+
+.iframe{
+  height:stretch;
+  width:stretch;
+  border:none;
 }

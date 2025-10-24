@@ -111,3 +111,19 @@
   background: url("JNPimg/button_question_2.png") no-repeat;
   background-size: contain;
 }
+.CreateButt1{
+  background: url("JNPimg/button_create_1.png") no-repeat;
+  background-size: contain;
+}
+.CreateButt2{
+  background: url("JNPimg/button_create_2.png") no-repeat;
+  background-size: contain;
+}
+.DiscordButt1{
+  background: url("JNPimg/button_discord_1.png") no-repeat;
+  background-size: contain;
+}
+.DiscordButt2{
+  background: url("JNPimg/button_discord_2.png") no-repeat;
+  background-size: contain;
+}

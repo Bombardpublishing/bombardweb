@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="JNPimg\favicon.svg" type="image/x-icon">
+  <link rel="icon" href="JNPimg\favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="JNPstyles.css">
   <link rel="stylesheet" href="JNPimagechangers.css">
   <meta charset="utf-8">
@@ -39,34 +39,34 @@
             portfolio of specialty publications, including the following:
           </div>
           <div class="tabholder">
-          <div class="tab_large AA_2 backtab"> <div class="fronttab AA_1 " onmouseover="clickclack()"> </div> </div>
-          <div class="tab_large AX_2 backtab"> <div class="fronttab AX_1 " onmouseover="clickclack()"> </div> </div>
-          <div class="tab_large DA_2 backtab"> <div class="fronttab DA_1 " onmouseover="clickclack()"> </div> </div>
-          <div class="tab_large NE_2 backtab"> <div class="fronttab NE_1 " onmouseover="clickclack()"> </div> </div>
-          <div class="tab_large TB_2 backtab"> <div class="fronttab TB_1 " onmouseover="clickclack()"> </div> </div>
+          <div class="tab_large AA_2 backtab"> <div class="fronttab AA_1 " onmouseover="clickclack()" onclick="loadPage('JNPpages/AA.html')"> </div> </div>
+          <div class="tab_large AX_2 backtab"> <div class="fronttab AX_1 " onmouseover="clickclack()" onclick="loadPage('JNPpages/AX.html')"> </div> </div>
+          <div class="tab_large DA_2 backtab"> <div class="fronttab DA_1 " onmouseover="clickclack()" onclick="loadPage('JNPpages/DE.html')"> </div> </div>
+          <div class="tab_large NE_2 backtab"> <div class="fronttab NE_1 " onmouseover="clickclack()" onclick="loadPage('JNPpages/NE.html')"> </div> </div>
+          <div class="tab_large TB_2 backtab"> <div class="fronttab TB_1 " onmouseover="clickclack()" onclick="loadPage('JNPpages/TB.html')"> </div> </div>
           <div class="tab_large" style="display:flex; justify-content:flex-start;">
-            <div class="tab_small ZZ_2 backtab"> <div class="fronttab ZZ_1 " onmouseover="clickclack()"> </div> </div>
+            <div class="tab_small ZZ_2 backtab"> <div class="fronttab ZZ_1 " onmouseover="clickclack()" onclick="loadPage('JNPpages/articles.html')"> </div> </div>
             <div class="smallbutt backtab QuestionButt2 QQ"> <div class="fronttab QuestionButt1 " onmouseover="clickclack()"></div></div>
         </div>
       </div>
     </div>
 
-        <div class="div_middle_middle" style="text-indent:25px;">
-          Put some content here brooo
+        <div class="div_middle_middle">
+          <iframe id="varcontent" src="JNPpages/jnphome.html" class="iframe"></iframe>
         </div>
 
         <div class="div_middle_right">
 
         <div class="buttonholder">
         <div style="width:100%; height:50%; justify-content: flex-start; display: flex;">
-          <div class="smallbutt backtab HomeButt2" onmouseover="clickclack()"><div class="fronttab HomeButt1" onclick="bump(questbut)"></div></div>
-          <div class="smallbutt backtab InfoButt2" onmouseover="clickclack()"><div class="fronttab InfoButt1"></div></div>
-          <div class="smallbutt backtab ContactButt2" onmouseover="clickclack()"><div class="fronttab ContactButt1"></div></div>
+          <div class="smallbutt backtab HomeButt2" onmouseover="clickclack()"><div class="fronttab HomeButt1" onclick="loadPage('JNPpages/jnphome.html')"></div></div>
+          <div class="smallbutt backtab InfoButt2" onmouseover="clickclack()"><div class="fronttab InfoButt1" onclick="loadPage('JNPpages/jnpinfo.html')"></div></div>
+          <div class="smallbutt backtab ContactButt2" onmouseover="clickclack()"><div class="fronttab ContactButt1" onclick="loadPage('JNPpages/jnpcontact.html')"></div></div>
         </div>
         <div style="width:100%; height:50%; justify-content: flex-start; display: flex;">
-          <div class="smallbutt backtab ExclButt2" onmouseover="clickclack()"><div class="fronttab ExclButt1"></div></div>
-          <div class="smallbutt backtab TwtButt2" onmouseover="clickclack()"><div class="fronttab TwtButt1"></div></div>
-          <div class="smallbutt backtab BomButt2" onmouseover="clickclack()"><div class="fronttab BomButt1"></div></div>
+          <div class="smallbutt backtab CreateButt2" onmouseover="clickclack()"><div class="fronttab CreateButt1" onclick="loadPage('JNPpages/jnpcreate.html')"></div></div>
+          <div class="smallbutt backtab TwtButt2" onmouseover="clickclack()"><a href="https://www.twitter.com/viermeelectric" target="_blank"><div class="fronttab TwtButt1" onclick=""></div></a></div>
+          <div class="smallbutt backtab DiscordButt2" onmouseover="clickclack()"><a href="https://discord.gg/skfSTQW8xM" target="_blank"><div class="fronttab DiscordButt1"></div></a></div>
         </div>
         </div>
 
@@ -123,5 +123,12 @@
           });
         });
     </script>
+
+    <!-- LOAD PAGE SCRIPT -->
+     <script>
+          function loadPage(pageUrl) {
+            document.getElementById('varcontent').src = pageUrl;
+            }
+        </script>
 
 </html>
