@@ -127,3 +127,11 @@
   background: url("JNPimg/button_discord_2.png") no-repeat;
   background-size: contain;
 }
+.DataBaseButton1{
+  background: url("JNPimg/accessdatabase1.png") no-repeat;
+  background-size: contain;
+}
+.DataBaseButton2{
+  background: url("JNPimg/accessdatabase2.png") no-repeat;
+  background-size: contain;
+}

@@ -150,6 +150,7 @@ body {
   margin-top: 12px;
   margin-bottom: 12px;
   background:linear-gradient(180deg, #75a5b2 0%, #e7f6e0 100%);
+  padding: 0;
 }
 
 .div_middle_right{
@@ -293,4 +294,5 @@ body {
   height:stretch;
   width:stretch;
   border:none;
+  padding: 0;
 }
